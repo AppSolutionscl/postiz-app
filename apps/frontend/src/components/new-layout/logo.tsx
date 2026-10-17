@@ -2,19 +2,12 @@
 
 export const Logo = () => {
   return (
-    <>
-      <img
-        src="/belevels-wordmark-white.png"
-        alt="be levels"
-        width={84}
-        className="hidden dark:block mt-[8px] h-auto"
-      />
-      <img
-        src="/belevels-wordmark-black.png"
-        alt="be levels"
-        width={84}
-        className="block dark:hidden mt-[8px] h-auto"
-      />
-    </>
+    <img
+      src="/favicon.png"
+      alt="be levels"
+      width={56}
+      height={56}
+      className="mt-[8px] min-w-[56px] min-h-[56px] rounded-[12px]"
+    />
   );
 };
