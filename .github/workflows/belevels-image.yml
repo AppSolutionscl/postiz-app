@@ -1,0 +1,41 @@
+name: be levels image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - be-levels-branding
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  image:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: Dockerfile.dev
+          push: true
+          platforms: linux/amd64
+          build-args: |
+            NEXT_PUBLIC_VERSION=2.25.1-belevels
+          tags: |
+            ghcr.io/appsolutionscl/postiz-app:belevels-${{ github.sha }}
+            ghcr.io/appsolutionscl/postiz-app:belevels-latest
