@@ -3,7 +3,7 @@ import { Login } from '@gitroom/frontend/components/auth/login';
 import { Metadata } from 'next';
 import { isGeneralServerSide } from '@gitroom/helpers/utils/is.general.server.side';
 export const metadata: Metadata = {
-  title: `${isGeneralServerSide() ? 'Be levels' : 'Gitroom'} Login`,
+  title: `${isGeneralServerSide() ? 'RRSS be levels Chile' : 'Gitroom'}`,
   description: '',
 };
 export default async function Auth() {

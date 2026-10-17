@@ -18,7 +18,7 @@ import { CreationMethodBadge } from '@gitroom/frontend/components/launches/creat
 
 dayjs.extend(utc);
 export const metadata: Metadata = {
-  title: `${isGeneralServerSide() ? 'Be levels' : 'Gitroom'} Preview`,
+  title: `${isGeneralServerSide() ? 'RRSS be levels Chile' : 'Gitroom'}`,
   description: '',
 };
 export default async function Auth(

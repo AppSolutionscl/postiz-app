@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import { Agent } from '@gitroom/frontend/components/agents/agent';
 export const metadata: Metadata = {
-  title: 'Be levels - Agent',
+  title: 'RRSS be levels Chile',
   description: 'agents',
 };
 export default async function Layout({

@@ -3,7 +3,7 @@ import { LaunchesComponent } from '@gitroom/frontend/components/launches/launche
 import { Metadata } from 'next';
 import { isGeneralServerSide } from '@gitroom/helpers/utils/is.general.server.side';
 export const metadata: Metadata = {
-  title: `${isGeneralServerSide() ? 'Be levels Calendar' : 'Gitroom Launches'}`,
+  title: `${isGeneralServerSide() ? 'RRSS be levels Chile' : 'Gitroom Launches'}`,
   description: '',
 };
 export default async function Index() {

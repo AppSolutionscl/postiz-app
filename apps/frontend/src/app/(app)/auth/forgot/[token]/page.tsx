@@ -3,7 +3,7 @@ import { ForgotReturn } from '@gitroom/frontend/components/auth/forgot-return';
 import { Metadata } from 'next';
 import { isGeneralServerSide } from '@gitroom/helpers/utils/is.general.server.side';
 export const metadata: Metadata = {
-  title: `${isGeneralServerSide() ? 'Be levels' : 'Gitroom'} Forgot Password`,
+  title: `${isGeneralServerSide() ? 'RRSS be levels Chile' : 'Gitroom'}`,
   description: '',
 };
 export default async function Auth(params: {

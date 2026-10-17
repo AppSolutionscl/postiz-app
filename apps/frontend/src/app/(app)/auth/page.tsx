@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { getT } from '@gitroom/react/translation/get.translation.service.backend';
 import { LoginWithOidc } from '@gitroom/frontend/components/auth/login.with.oidc';
 export const metadata: Metadata = {
-  title: `${isGeneralServerSide() ? 'Be levels' : 'Gitroom'} Register`,
+  title: `${isGeneralServerSide() ? 'RRSS be levels Chile' : 'Gitroom'}`,
   description: '',
 };
 export default async function Auth(params: {searchParams: Promise<{provider: string}>}) {
