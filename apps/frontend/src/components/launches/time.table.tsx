@@ -199,7 +199,7 @@ export const TimeTable: FC<{
                   'group flex items-center justify-between',
                   'h-[48px] px-[16px] rounded-[8px]',
                   'bg-newBgColorInner border border-newTableBorder',
-                  'hover:border-btnPrimary/40 transition-colors'
+                  'hover:border-newTextColor/40 transition-colors'
                 )}
               >
                 <div className="flex items-center gap-[12px]">

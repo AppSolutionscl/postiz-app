@@ -68,7 +68,7 @@ const AnalyticsCard: FC<{
           rounded-[12px]
           overflow-hidden
           transition-all duration-200
-          hover:border-btnPrimary/50
+          hover:border-newTextColor/50
         `}
       >
         {/* Header */}
