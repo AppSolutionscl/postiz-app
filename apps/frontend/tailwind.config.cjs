@@ -75,6 +75,7 @@ module.exports = {
         modalCustom: 'var(--color-modalCustom)',
 
         newBgColor: 'var(--new-bgColor)',
+        newPageBg: 'var(--new-pageBg)',
         newBackdrop: 'var(--new-back-drop)',
         newSep: 'var(--new-sep)',
         newBorder: 'var(--new-border)',

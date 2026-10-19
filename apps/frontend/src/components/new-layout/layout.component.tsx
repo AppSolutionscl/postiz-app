@@ -103,7 +103,7 @@ export const LayoutComponent = ({ children }: { children: ReactNode }) => {
             <ContinueProvider />
             <div
               className={clsx(
-                'flex flex-col min-h-screen min-w-screen text-newTextColor p-[12px] mobile:p-[8px] mobile:pb-[80px]',
+                'flex flex-col min-h-screen min-w-screen bg-newPageBg text-newTextColor p-[12px] mobile:p-[8px] mobile:pb-[80px]',
                 jakartaSans.className
               )}
             >
@@ -123,7 +123,7 @@ export const LayoutComponent = ({ children }: { children: ReactNode }) => {
                     )}
                     <div
                       className={clsx(
-                        'flex flex-col bg-btnPrimary w-[80px] rounded-[12px] [--new-textColor:255_255_255] [--new-textItemBlur:#a3a3a3] [--new-textItemFocused:#121212] [--new-boxFocused:#ffffff] dark:[--new-textColor:18_18_18] dark:[--new-textItemBlur:#6b6b6b] dark:[--new-textItemFocused:#ffffff] dark:[--new-boxFocused:#121212] mobile:fixed mobile:top-0 mobile:bottom-0 mobile:start-0 mobile:z-[491] mobile:rounded-none mobile:overflow-y-auto mobile:overflow-x-hidden',
+                        'flex flex-col bg-newBgColorInner w-[80px] rounded-[12px] mobile:fixed mobile:top-0 mobile:bottom-0 mobile:start-0 mobile:z-[491] mobile:rounded-none mobile:overflow-y-auto mobile:overflow-x-hidden',
                         !menuOpen && 'mobile:hidden'
                       )}
                       onClick={() => setMenuOpen(false)}
